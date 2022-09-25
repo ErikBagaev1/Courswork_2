@@ -7,7 +7,7 @@ final _workers = [
   WorkersCards(fullName: 'Бясов Давид Артурович', position: 'должность'),
   WorkersCards(fullName: 'Цахилов Валерий Георгиевич', position: 'должность'),
   WorkersCards(fullName: 'Коков Руслан Вадимович', position: 'должность'),
-  WorkersCards(fullName: 'Имя 2', position: 'должность'),
+  WorkersCards(fullName: 'Котаев Аслан Анатольевич', position: 'должность'),
   WorkersCards(fullName: 'Имя 3', position: 'должностgitь'),
   WorkersCards(fullName: 'Имя 1', position: 'должность'),
   WorkersCards(fullName: 'Имя 2', position: 'должность'),
