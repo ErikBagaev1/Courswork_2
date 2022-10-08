@@ -1,3 +1,5 @@
+import 'package:courswork_2/PersonDetailes/person_detailes.dart';
+import 'package:courswork_2/WorkersScreen/workers_screen.dart';
 import 'package:courswork_2/basic/basik_display.dart';
 import 'package:flutter/material.dart';
 
@@ -26,14 +28,22 @@ class MyApp extends StatelessWidget {
           )),
       routes: {
         '/': (context) => BasicDisplay(),
-        // '/main_screen': (context) => MainScreenWidget(),
+
+        '/person_detailes': (context) {
+          final arguments = ModalRoute.of(context)?.settings.arguments;
+          if (arguments is int) {
+            return PersonDetailesWidget(personId: arguments);
+          } else {
+            return PersonDetailesWidget(personId: 0);
+          }
+        },
         // '/main_screen/movie_details': (context) {
-        //   final arguments = ModalRoute.of(context)?.settings.arguments;
-        //   if (arguments is int) {
-        //     return MovieDetailsWidget(movieId: arguments);
-        //   } else {
-        //     return MovieDetailsWidget(movieId: 1);
-        //   }
+        //   // final arguments = ModalRoute.of(context)?.settings.arguments;
+        //   // if (arguments is int) {
+        //   //   return MovieDetailsWidget(movieId: arguments);
+        //   // } else {
+        //   //   return MovieDetailsWidget(movieId: 1);
+        //   // }
         // }
       },
       initialRoute: '/',
