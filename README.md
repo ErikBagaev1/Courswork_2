@@ -4,13 +4,25 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+// Кадровый учет на факультете
+// * Кадровая справка
+//    * ФИО
+//    * Адрес
+//    * должность
+//    * дата рождения
+//    * ученая степень год прислования
+//    * ученая звание год прислования
+//    * пол
+//    * образование (ВУЗ, специальность, год, номер)
+//    * контакты (телефон, почта)
+//    * дети (ФИО, дата рождения)
+// * Эффективность и стимулирующая
+//    * добавление в течении года участие в мероприятиях
+//    * ФПК
+// * Учет курсовых и дипломных
+//    * Выкладывание тем 
+//    * Подача заявок от студентов
+//    * Подтверждение научника
+//    * Календарь работы
+//    * Склад документов и работ
+//    * Протоколы и журналы Изы по защитам дипломных.
