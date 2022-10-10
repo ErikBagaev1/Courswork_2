@@ -13,6 +13,7 @@ class HomeScreen extends StatelessWidget {
 
     return Center(
       child: ListView(
+        keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
         children: [
           Column(
             children: [
@@ -64,9 +65,9 @@ class NewLine extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(3.0),
       child: Container(
-        width: 1000,
+        width: double.infinity,
         decoration: BoxDecoration(
-          color: AppColor.buttonColor,
+          color: AppColor.buttonColorBlue,
           borderRadius: BorderRadius.all(Radius.circular(4)),
         ),
         child: Padding(

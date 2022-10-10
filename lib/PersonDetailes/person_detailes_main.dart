@@ -2,6 +2,8 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
+import '../Themes/app_color.dart';
+
 class PersonDetailesMainWidget extends StatefulWidget {
   const PersonDetailesMainWidget({super.key});
 
@@ -14,25 +16,74 @@ class _PersonDetailesMainWidgetState extends State<PersonDetailesMainWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.only(left: 3.0, right: 3),
       child: Column(
         children: [
-          Row(
+          AboutPerson(
+            sectionKey: 'ФИО',
+            sectionValue: 'Багаев Эрик Валерьевич',
+          ),
+          AboutPerson(
+            sectionKey: 'Aдрес',
+            sectionValue: 'пгт. Заводской 10-я линия дом 61',
+          ),
+          AboutPerson(
+            sectionKey: 'Должность',
+            sectionValue: 'Декан факультета математики и компьютерных наук ',
+          ),
+          AboutPerson(
+            sectionKey: 'Дата рождения',
+            sectionValue: '25.12.2003г',
+          ),
+          AboutPerson(
+            sectionKey: 'Ученая степень',
+            sectionValue: 'Профессор',
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class AboutPerson extends StatelessWidget {
+  final String sectionKey;
+  final String sectionValue;
+  const AboutPerson(
+      {super.key, required this.sectionKey, required this.sectionValue});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 5.0),
+      child: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: AppColor.mainYellow,
+          borderRadius: BorderRadius.all(Radius.circular(4)),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(7.0),
+          child: Column(
             children: [
               Text(
-                'ФИО',
-                style: TextStyle(fontSize: 23, color: Colors.white),
+                sectionKey,
+                style: TextStyle(
+                    fontSize: 23,
+                    color: AppColor.mainBlack,
+                    fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                width: 60,
+                height: 5,
               ),
               Text(
-                'Багаев Эрик Валерьевич',
-                style: TextStyle(fontSize: 23, color: Colors.white),
+                textAlign: TextAlign.center,
+                softWrap: true,
+                sectionValue,
+                style: TextStyle(fontSize: 23, color: AppColor.mainBlack),
               )
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

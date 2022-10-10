@@ -1,4 +1,5 @@
 import 'package:courswork_2/HomeScreen/home_screen.dart';
+import 'package:courswork_2/NewWorker/new_worker_screen.dart';
 import 'package:courswork_2/WorkersScreen/workers_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -33,11 +34,7 @@ class _BasicDisplayState extends State<BasicDisplay> {
       ),
       body: IndexedStack(
         index: _selectedTab,
-        children: [
-          HomeScreen(),
-          WorkersScreen(),
-          Text('Сериалы'),
-        ],
+        children: [HomeScreen(), WorkersScreen(), NewWorkerScreen()],
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedTab,

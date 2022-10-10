@@ -47,6 +47,12 @@ class _WorkersScreenState extends State<WorkersScreen> {
     super.initState();
 
     _searchWorkers = _workers;
+    _searchWorkers.sort((a, b) {
+      return a.fullName[0]
+          .toString()
+          .toLowerCase()
+          .compareTo(b.fullName[0].toString().toLowerCase());
+    });
     _searConroller.addListener((_searchWorker));
   }
 

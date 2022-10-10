@@ -17,7 +17,7 @@ class _PersonDetailesWidgetState extends State<PersonDetailesWidget> {
       appBar: AppBar(
         title: Center(
             child: Text(
-          'NOSU',
+          'NOSU         ',
           style: TextStyle(
             fontSize: 25,
             fontWeight: FontWeight.bold,
@@ -25,15 +25,9 @@ class _PersonDetailesWidgetState extends State<PersonDetailesWidget> {
         )),
       ),
       body: ColoredBox(
-        color: AppColor.mainYellow,
-        child: Padding(
-          padding: const EdgeInsets.all(1.0),
-          child: ColoredBox(
-            color: AppColor.mainBlack,
-            child: ListView(
-              children: [PersonDetailesMainWidget()],
-            ),
-          ),
+        color: AppColor.buttonColorBlue,
+        child: ListView(
+          children: [PersonDetailesMainWidget()],
         ),
       ),
     );
