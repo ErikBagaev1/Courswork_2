@@ -25,7 +25,7 @@ class _PersonDetailesWidgetState extends State<PersonDetailesWidget> {
         )),
       ),
       body: ColoredBox(
-        color: AppColor.buttonColorBlue,
+        color: Colors.white,
         child: ListView(
           children: [PersonDetailesMainWidget()],
         ),

@@ -16,7 +16,7 @@ class _PersonDetailesMainWidgetState extends State<PersonDetailesMainWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 3.0, right: 3),
+      padding: const EdgeInsets.only(left: 3, right: 3),
       child: Column(
         children: [
           AboutPerson(
@@ -59,7 +59,8 @@ class AboutPerson extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           color: AppColor.mainYellow,
-          borderRadius: BorderRadius.all(Radius.circular(4)),
+          borderRadius: BorderRadius.all(Radius.circular(15)),
+          border: Border.all(color: AppColor.buttonColorBlue, width: 4),
         ),
         child: Padding(
           padding: const EdgeInsets.all(7.0),

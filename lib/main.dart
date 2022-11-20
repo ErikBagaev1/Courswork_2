@@ -1,8 +1,6 @@
 import 'package:courswork_2/PersonDetailes/person_detailes.dart';
-import 'package:courswork_2/WorkersScreen/workers_screen.dart';
 import 'package:courswork_2/basic/basik_display.dart';
 import 'package:flutter/material.dart';
-
 import 'Themes/app_color.dart';
 
 void main() {
