@@ -59,8 +59,8 @@ class AboutPerson extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           color: AppColor.mainYellow,
-          borderRadius: BorderRadius.all(Radius.circular(15)),
-          border: Border.all(color: AppColor.buttonColorBlue, width: 4),
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          border: Border.all(color: AppColor.buttonColorBlue, width: 2),
         ),
         child: Padding(
           padding: const EdgeInsets.all(7.0),

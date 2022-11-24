@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
           )),
       routes: {
         '/': (context) => BasicDisplay(),
-
         '/person_detailes': (context) {
           final arguments = ModalRoute.of(context)?.settings.arguments;
           if (arguments is int) {

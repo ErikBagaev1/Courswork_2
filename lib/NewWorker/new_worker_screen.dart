@@ -24,7 +24,7 @@ class _NewWorkerScreenState extends State<NewWorkerScreen> {
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius:
-                              const BorderRadius.all(Radius.circular(10.0))),
+                              const BorderRadius.all(Radius.circular(4))),
                       label: Text(
                         "ФИО",
                         style: TextStyle(fontWeight: FontWeight.bold),
@@ -42,13 +42,14 @@ class _NewWorkerScreenState extends State<NewWorkerScreen> {
                 width: double.infinity,
                 child: ElevatedButton(
                   style: ButtonStyle(
+
                       // minimumSize: MaterialStateProperty.all(Size(100, 50)),
                       backgroundColor:
                           MaterialStateProperty.all(AppColor.buttonColorGreen)),
                   onPressed: () {},
                   child: Text(
                     'Добавить сотрудника',
-                    style: TextStyle(fontSize: 25),
+                    style: TextStyle(fontSize: 25, color: AppColor.mainYellow),
                   ),
                 ),
               ),

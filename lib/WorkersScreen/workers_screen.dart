@@ -99,7 +99,7 @@ class _WorkersScreenState extends State<WorkersScreen> {
                             child: Text(
                               person.position,
                               style: TextStyle(
-                                  color: AppColor.secondColor,
+                                  color: AppColor.grayColor,
                                   fontWeight: FontWeight.w500,
                                   fontSize: 18),
                             ),
